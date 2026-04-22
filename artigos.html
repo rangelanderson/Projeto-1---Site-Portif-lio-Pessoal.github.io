@@ -1,0 +1,73 @@
+<!-- Feito por: Anderson Rangel -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos | Anderson Rangel</title>
+    <link rel="icon" type="image/png" href="favicon-marfim.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="favicon-vinho.png" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+    // Executa antes de renderizar o corpo da página para evitar o flash branco
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="monograma">AR</div>
+                <div class="nome-escritor">ANDERSON RANGEL</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigos.html" class="active">Artigos</a></li>
+                <li><a href="poemas.html">Poemas/Sonetos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><button id="theme-toggle" title="Alternar tema">🌓</button></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-narrow">
+        <section class="page-header">
+            <h1>Artigos e Dissertativos</h1>
+            <article class="archive-item">
+            </article>
+        <section class="archive-list">
+            <article class="archive-item">
+                <span class="date">07 Abr, 2026</span>
+                <h2>As Divergências Quanto ao Saneamento Básico no Brasil</h2>
+                <p>Neste artigo, será desbravado o que não é muito repercurtido: O esgoto a céu aberto nas cidades brasileiras.</p>
+                <a href="dissertativo2.html" class="read-more">Continuar leitura →</a>
+            </article>
+            
+            <article class="archive-item">
+                <span class="date">06 Abr, 2026</span>
+                <h2>É Preciso "transparência" Quanto ao uso de Celulares nas Escolas?</h2>
+                <p>Uma reflexão sobre a lei polêmica brasileira e ao mesmo tempo sugestões sobre como poderia melhorar...</p>
+                <a href="artigo1.html" class="read-more">Continuar leitura →</a>
+            </article>
+
+            <article class="archive-item">
+                <span class="date">06 Abr, 2026</span>
+                <h2>As Bibliotecas Escolares Precisam de Silêncio</h2>
+                <p>Este estudo mostra a visão de como um aluno pode ser prejudicado quanto ao comportamento dos outros no ambiente escolar.</p>
+                <a href="dissertativo1.html" class="read-more">Continuar leitura →</a>
+            </article>
+
+             
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Anderson Rangel. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

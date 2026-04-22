@@ -1,0 +1,8 @@
+Copyright (c) 2026 Anderson Rangel
+
+Todos os direitos reservados.
+
+É permitido visualizar este código apenas para fins educacionais.
+Não é permitido copiar, modificar, distribuir ou utilizar este código
+para fins comerciais sem autorização explícita do autor, de acordo com
+a licença CC BY-NC-ND.

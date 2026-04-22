@@ -1,0 +1,77 @@
+<!-- Feito por: Anderson Rangel -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Anderson Rangel</title>
+    <link rel="icon" type="image/png" href="favicon-marfim.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" href="favicon-vinho.png" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+    // Executa antes de renderizar o corpo da página para evitar o flash branco
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+</script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="monograma">AR</div>
+                <div class="nome-escritor">ANDERSON RANGEL</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="poemas.html">Poemas/Sonetos</a></li>
+                <li><a href="sobre.html" class="active">Sobre</a></li>
+                <li><button id="theme-toggle" title="Alternar tema">🌓</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-sobre">
+        <section class="perfil">
+            
+            <div class="bio-texto">
+                <h1>Anderson Rangel</h1>
+                <hr class="separador-curto">
+
+                <p class="tagline">Escritor, observador e entusiasta das narrativas que moldam o real.</p>
+                
+
+                <p>
+                    Minha jornada com as palavras começou na necessidade de traduzir o mundo. Acredito que a escrita não é apenas um registro, mas uma ferramenta de investigação ética e emocional. Através de ensaios e poesias, busco explorar as intersecções entre a tecnologia e a essência humana.
+                </p>
+
+                <p>
+                    Neste espaço, guardo minhas produções mais recentes. De artigos que questionam o impacto da Inteligência Artificial até versos que tentam capturar a efemeridade de um crepúsculo. Meu objetivo é simples: construir pontes através da linguagem.
+                </p>
+
+                <div class="contato-box">
+                    <h3>Vamos conversar?</h3>
+                    <p>Para colaborações, palestras ou apenas um café literário:</p>
+                    <a href="mailto:contato@andersonrangel.com" class="email-link">andersomrangel90@gmail.com</a>
+                    <hr class="separador-curto">
+
+
+                    <p>Pode me encontrar também no <a href="https://www.linkedin.com/in/anderson-rangel-8a4463259/" target="_blank">
+                    Linkedin.
+                    </a></p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Anderson Rangel. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
